@@ -1,0 +1,4 @@
+title: Arquivo
+description: Acervo pessoal de textos, ensaios e ilustrações
+paginate: 10
+paginate_path: "/page:num/"
