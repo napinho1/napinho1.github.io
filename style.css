@@ -39,6 +39,8 @@ a:hover {
   color: var(--blue);
 }
 
+/* HEADER */
+
 .site-header {
   max-width: 980px;
   margin: 0 auto 56px;
@@ -58,6 +60,8 @@ a:hover {
   border-bottom: 2px solid var(--orange);
   padding-bottom: 3px;
 }
+
+/* NAV */
 
 .top-nav {
   display: flex;
@@ -82,6 +86,8 @@ a:hover {
   color: var(--orange);
 }
 
+/* LAYOUT */
+
 .feed {
   max-width: 760px;
   margin: 0 auto;
@@ -91,15 +97,17 @@ a:hover {
   margin-bottom: 56px;
 }
 
+/* POSTS */
+
 .log-entry,
 .post-list-entry {
-  padding: 18px 0 20px;
+  padding: 16px 0 18px;
   border-bottom: 1px solid var(--line);
 }
 
 .entry-title {
-  margin: 0 0 8px;
-  font-size: 1.45rem;
+  margin: 0 0 6px;
+  font-size: 1.35rem;
   font-weight: normal;
   line-height: 1.35;
 }
@@ -115,7 +123,7 @@ a:hover {
 .entry-meta {
   color: var(--blue);
   font-family: "Courier New", monospace;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   letter-spacing: 0.03em;
 }
 
@@ -134,17 +142,22 @@ a:hover {
   font-style: italic;
 }
 
+/* CATEGORIAS (CAIXAS) */
+
 .portal-grid {
   display: grid;
-  gap: 18px;
+  gap: 14px;
 }
 
 .portal-card {
   display: block;
-  padding: 24px 22px;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 18px 20px;
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
   border: 1px solid var(--line);
   text-align: center;
+  transition: 0.2s ease;
 }
 
 .portal-card:hover {
@@ -154,25 +167,56 @@ a:hover {
 
 .portal-title {
   color: var(--text);
-  font-size: 1.6rem;
-  margin: 0 0 8px;
+  font-size: 1.35rem;
+  margin: 0 0 6px;
   font-weight: normal;
 }
 
 .portal-subtitle {
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   margin: 0;
 }
+
+/* MAPA (TAGS) */
+
+.tag-cloud {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px 18px;
+  padding-top: 10px;
+}
+
+.tag-link {
+  display: inline-block;
+  padding: 6px 10px;
+  color: var(--blue);
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.tag-link:hover {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+/* TITULOS DE SEÇÃO */
 
 .section-heading {
   margin: 0 0 24px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: normal;
   color: var(--orange);
   text-transform: lowercase;
 }
+
+/* LINKS AUXILIARES */
 
 .back-link {
   display: inline-block;
@@ -185,13 +229,15 @@ a:hover {
   color: var(--orange);
 }
 
+/* POST INDIVIDUAL */
+
 .post {
   padding-bottom: 30px;
 }
 
 .post h1 {
   margin: 0 0 22px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: normal;
   line-height: 1.2;
 }
@@ -214,6 +260,8 @@ a:hover {
   line-height: 1.9;
 }
 
+/* RESPONSIVO */
+
 @media (max-width: 700px) {
   body {
     padding: 32px 16px 56px;
@@ -224,14 +272,14 @@ a:hover {
   }
 
   .entry-title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .portal-title {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   .post h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
