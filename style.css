@@ -142,58 +142,59 @@ a:hover {
 }
 
 /* ========================= */
-/* CATEGORIAS — NOVO ESTILO  */
+/* CATEGORIAS — LISTA TIPOGRÁFICA */
 /* ========================= */
 
-.portal-grid {
+.portal-list {
   max-width: 620px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
-.portal-card {
+.portal-item {
   display: block;
-  padding: 22px 0 18px;
+  padding: 20px 0 18px;
   border-bottom: 1px solid var(--line);
-  background: transparent;
-  text-align: left;
-  transition: 0.2s ease;
+  text-decoration: none;
+  transition: 0.25s ease;
 }
 
-.portal-card:hover {
-  transform: translateX(6px);
-}
-
-.portal-card:hover .portal-title {
-  color: var(--orange);
-}
-
-.portal-card:hover .portal-subtitle {
-  color: var(--text);
+.portal-item:hover {
+  transform: translateX(8px);
 }
 
 .portal-title {
+  display: block;
   margin: 0 0 4px;
   color: var(--text);
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.1;
   text-transform: lowercase;
+  transition: 0.2s ease;
 }
 
 .portal-subtitle {
+  display: block;
   margin: 0;
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.5;
   font-style: italic;
+  transition: 0.2s ease;
 }
 
 .portal-subtitle::before {
   content: "— ";
   color: var(--blue);
   font-style: normal;
+}
+
+.portal-item:hover .portal-title {
+  color: var(--orange);
+}
+
+.portal-item:hover .portal-subtitle {
+  color: var(--text);
 }
 
 /* MAPA (TAGS) */
@@ -229,8 +230,8 @@ a:hover {
 
 .section-heading {
   margin: 0 0 28px;
-  text-align: left;
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
   font-weight: normal;
   color: var(--orange);
   text-transform: lowercase;
