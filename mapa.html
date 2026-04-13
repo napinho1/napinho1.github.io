@@ -1,0 +1,39 @@
+---
+layout: default
+title: Mapa
+---
+
+<section id="tempo">
+  <h2>tempo</h2>
+  {% for post in site.tags.tempo %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section id="memoria">
+  <h2>memória</h2>
+  {% for post in site.tags.memoria %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section id="linguagem">
+  <h2>linguagem</h2>
+  {% for post in site.tags.linguagem %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section id="estrutura">
+  <h2>estrutura</h2>
+  {% for post in site.tags.estrutura %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section id="ruina">
+  <h2>ruína</h2>
+  {% for post in site.tags.ruina %}
+    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+  {% endfor %}
+</section>
