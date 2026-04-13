@@ -180,19 +180,21 @@ a:hover {
 /* MAPA (TAGS) */
 
 .tag-cloud {
-  max-width: 760px;
+  max-width: 620px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 14px 18px;
-  padding-top: 10px;
+  gap: 10px 14px;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .tag-link {
   display: inline-block;
-  padding: 6px 10px;
-  color: var(--blue);
+  padding: 4px 6px;
+  color: #7b4cff;
   font-family: "Courier New", monospace;
   font-size: 0.95rem;
   border-bottom: 1px solid transparent;
@@ -203,7 +205,6 @@ a:hover {
   color: var(--orange);
   border-bottom-color: var(--orange);
 }
-
 /* TITULOS DE SEÇÃO */
 
 .section-heading {
