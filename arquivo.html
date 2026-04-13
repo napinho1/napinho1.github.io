@@ -1,0 +1,39 @@
+---
+layout: default
+title: Arquivo
+---
+
+<section>
+  <h2>poesia</h2>
+  {% for post in site.categories.poesia %}
+    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>matemática</h2>
+  {% for post in site.categories.matematica %}
+    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>ensaios</h2>
+  {% for post in site.categories.ensaios %}
+    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>aforismos</h2>
+  {% for post in site.categories.aforismos %}
+    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>visual</h2>
+  {% for post in site.categories.visual %}
+    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
+  {% endfor %}
+</section>
