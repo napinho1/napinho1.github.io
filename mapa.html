@@ -3,37 +3,33 @@ layout: default
 title: Mapa
 ---
 
-<section id="tempo">
-  <h2>tempo</h2>
-  {% for post in site.tags.tempo %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
-</section>
+<section class="page-section">
+  <h2 class="section-heading">núcleos</h2>
 
-<section id="memoria">
-  <h2>memória</h2>
-  {% for post in site.tags.memoria %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
-</section>
+  <div class="portal-grid">
+    <a class="portal-card" href="/mapa/tempo.html">
+      <h3 class="portal-title">tempo</h3>
+      <p class="portal-subtitle">duração, mudança, repetição, história</p>
+    </a>
 
-<section id="linguagem">
-  <h2>linguagem</h2>
-  {% for post in site.tags.linguagem %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
-</section>
+    <a class="portal-card" href="/mapa/memoria.html">
+      <h3 class="portal-title">memória</h3>
+      <p class="portal-subtitle">vestígio, lembrança, permanência</p>
+    </a>
 
-<section id="estrutura">
-  <h2>estrutura</h2>
-  {% for post in site.tags.estrutura %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
-</section>
+    <a class="portal-card" href="/mapa/linguagem.html">
+      <h3 class="portal-title">linguagem</h3>
+      <p class="portal-subtitle">escrita, expressão, nomeação, forma</p>
+    </a>
 
-<section id="ruina">
-  <h2>ruína</h2>
-  {% for post in site.tags.ruina %}
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-  {% endfor %}
+    <a class="portal-card" href="/mapa/estrutura.html">
+      <h3 class="portal-title">estrutura</h3>
+      <p class="portal-subtitle">ordem, sistema, relação, construção</p>
+    </a>
+
+    <a class="portal-card" href="/mapa/ruina.html">
+      <h3 class="portal-title">ruína</h3>
+      <p class="portal-subtitle">decadência, resíduo, colapso, perda</p>
+    </a>
+  </div>
 </section>
