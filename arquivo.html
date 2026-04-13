@@ -3,37 +3,33 @@ layout: default
 title: Arquivo
 ---
 
-<section>
-  <h2>poesia</h2>
-  {% for post in site.categories.poesia %}
-    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
-  {% endfor %}
-</section>
+<section class="page-section">
+  <h2 class="section-heading">categorias</h2>
 
-<section>
-  <h2>matemática</h2>
-  {% for post in site.categories.matematica %}
-    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
-  {% endfor %}
-</section>
+  <div class="portal-grid">
+    <a class="portal-card" href="/arquivo/poesia.html">
+      <h3 class="portal-title">poesia</h3>
+      <p class="portal-subtitle">poemas, fragmentos líricos, imagens verbais</p>
+    </a>
 
-<section>
-  <h2>ensaios</h2>
-  {% for post in site.categories.ensaios %}
-    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
-  {% endfor %}
-</section>
+    <a class="portal-card" href="/arquivo/matematica.html">
+      <h3 class="portal-title">matemática</h3>
+      <p class="portal-subtitle">notas, estruturas, demonstrações, ideias formais</p>
+    </a>
 
-<section>
-  <h2>aforismos</h2>
-  {% for post in site.categories.aforismos %}
-    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
-  {% endfor %}
-</section>
+    <a class="portal-card" href="/arquivo/ensaios.html">
+      <h3 class="portal-title">ensaios</h3>
+      <p class="portal-subtitle">reflexões longas, análises, elaborações conceituais</p>
+    </a>
 
-<section>
-  <h2>visual</h2>
-  {% for post in site.categories.visual %}
-    <p><a href="{{ post.url }}">{{ post.date | date: "%d.%m.%y" }} — {{ post.title }}</a></p>
-  {% endfor %}
+    <a class="portal-card" href="/arquivo/aforismos.html">
+      <h3 class="portal-title">aforismos</h3>
+      <p class="portal-subtitle">frases, teses breves, condensações</p>
+    </a>
+
+    <a class="portal-card" href="/arquivo/visual.html">
+      <h3 class="portal-title">visual</h3>
+      <p class="portal-subtitle">desenhos, imagens, estudos visuais</p>
+    </a>
+  </div>
 </section>
