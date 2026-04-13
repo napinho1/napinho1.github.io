@@ -141,41 +141,59 @@ a:hover {
   font-style: italic;
 }
 
-/* CATEGORIAS (CAIXAS) */
+/* ========================= */
+/* CATEGORIAS — NOVO ESTILO  */
+/* ========================= */
 
 .portal-grid {
-  display: grid;
-  gap: 10px;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .portal-card {
   display: block;
-  max-width: 560px;
-  margin: 0 auto;
-  padding: 14px 18px;
-  background: linear-gradient(180deg, var(--panel), var(--panel-2));
-  border: 1px solid var(--line);
-  text-align: center;
+  padding: 22px 0 18px;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  text-align: left;
   transition: 0.2s ease;
 }
 
 .portal-card:hover {
-  border-color: var(--blue);
-  transform: translateY(-1px);
+  transform: translateX(6px);
+}
+
+.portal-card:hover .portal-title {
+  color: var(--orange);
+}
+
+.portal-card:hover .portal-subtitle {
+  color: var(--text);
 }
 
 .portal-title {
-  color: var(--text);
-  font-size: 1.15rem;
   margin: 0 0 4px;
+  color: var(--text);
+  font-size: 2rem;
   font-weight: normal;
+  line-height: 1.1;
+  text-transform: lowercase;
 }
 
 .portal-subtitle {
-  color: var(--muted);
-  font-size: 0.82rem;
   margin: 0;
-  line-height: 1.45;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.portal-subtitle::before {
+  content: "— ";
+  color: var(--blue);
+  font-style: normal;
 }
 
 /* MAPA (TAGS) */
@@ -206,12 +224,13 @@ a:hover {
   color: var(--orange);
   border-bottom-color: var(--orange);
 }
+
 /* TITULOS DE SEÇÃO */
 
 .section-heading {
-  margin: 0 0 24px;
-  text-align: center;
-  font-size: 1.8rem;
+  margin: 0 0 28px;
+  text-align: left;
+  font-size: 1.5rem;
   font-weight: normal;
   color: var(--orange);
   text-transform: lowercase;
@@ -277,7 +296,11 @@ a:hover {
   }
 
   .portal-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .portal-subtitle {
+    font-size: 0.92rem;
   }
 
   .post h1 {
