@@ -1,0 +1,21 @@
+---
+layout: default
+title: Tempo
+---
+
+<a class="back-link" href="/mapa.html">← voltar ao mapa</a>
+
+<section class="page-section">
+  <h2 class="section-heading">tempo</h2>
+
+  {% for post in site.tags.tempo %}
+    <article class="post-list-entry">
+      <h3 class="entry-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+      <div class="entry-meta">
+        {{ post.date | date: "%d.%m.%y" }}
+      </div>
+    </article>
+  {% endfor %}
+</section>
