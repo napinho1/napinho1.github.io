@@ -12,9 +12,9 @@
     <h1 class="site-title"><a href="/">ARQUIVO</a></h1>
 
     <nav class="top-nav">
-      <a href="/">fluxo</a>
-      <a href="/arquivo.html">arquivo</a>
-      <a href="/mapa.html">mapa</a>
+      <a href="/" class="{% if page.title == 'Fluxo' %}active{% endif %}">fluxo</a>
+      <a href="/arquivo.html" class="{% if page.title == 'Arquivo' %}active{% endif %}">arquivo</a>
+      <a href="/mapa.html" class="{% if page.title == 'Mapa' %}active{% endif %}">mapa</a>
     </nav>
   </header>
 
